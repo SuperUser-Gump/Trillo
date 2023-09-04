@@ -392,6 +392,10 @@ body {
   border-bottom: var(--line);
   display: flex;
   flex-wrap: wrap; }
+  @media only screen and (max-width: 31.25em) {
+    .list {
+      flex-direction: column;
+      flex-wrap: nowrap; } }
   .list__item {
     flex: 0 0 50%;
     margin-bottom: 0.7rem; }
@@ -406,8 +410,15 @@ body {
   color: var(--color-grey-dark-3);
   display: flex;
   align-items: center; }
+  @media only screen and (max-width: 31.25em) {
+    .recommend {
+      flex-direction: column;
+      align-items: flex-start; } }
   .recommend__count {
     margin-right: auto; }
+    @media only screen and (max-width: 31.25em) {
+      .recommend__count {
+        margin-bottom: 1.5rem; } }
   .recommend__friends {
     display: flex; }
   .recommend__photo {
