@@ -32,6 +32,7 @@
 
 .content {
   display: flex;
+  min-height: calc(95.5vh - 7rem);
 
   @media only screen and (max-width: $bp-medium) {
     flex-direction: column;
@@ -46,11 +47,17 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  @media only screen and (max-width: $bp-medium) {
+    flex-basis: 0;
+  }
 }
 
 .hotel-view {
   background-color: #fff;
 
+  display: flex;
+  flex-direction: column;
   flex: 1;
 }
 
@@ -63,9 +70,6 @@
 
   @media only screen and (max-width: $bp-medium) {
     padding: 3rem;
-  }
-
-  @media only screen and (max-width: $bp-small) {
     flex-direction: column;
   }
 }
@@ -79,11 +83,8 @@
 
   @media only screen and (max-width: $bp-medium) {
     padding: 2rem;
-    margin-right: 3rem;
-  }
-
-  @media only screen and (max-width: $bp-small) {
     margin-right: 0;
+    flex-basis: 0;
     margin-bottom: 3rem;
   }
 }
