@@ -1,0 +1,14 @@
+.gallery {
+  display: flex;
+
+  &__item img:not(#slide-1) {
+    @media only screen and (max-width: $bp-small) {
+      display: none;
+    }
+  }
+
+  &__photo {
+    width: 100%;
+    display: block;
+  }
+}
